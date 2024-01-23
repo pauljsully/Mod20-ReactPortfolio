@@ -39,3 +39,20 @@ font-weight: 100;
     font-size: medium;
     font-weight: 100;
 }
+
+@media screen and (max-width:840px) {
+    .paulImg {
+        right: -45vw;
+    }
+    .mainContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width:480px) {
+    .paulImg {
+        right: -85vw;
+    }
+}
