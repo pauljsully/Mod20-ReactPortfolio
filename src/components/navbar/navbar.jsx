@@ -12,7 +12,6 @@ const Navbar = () => {
             <Link className='menulistitem'>Home</Link>
             <Link className='menulistitem'>About</Link>
             <Link className='menulistitem'>Portfolio</Link>
-            <Link className='menulistitem'>Contact</Link>
             <Link className='menulistitem'>Resume</Link>
         </div>
         <button className='contactBtn'>
