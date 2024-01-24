@@ -8,7 +8,8 @@ const Main = () => {
         <div className='mainContent'>
             <span className="hello">Hello, </span>
             <span className="mainText">I am <span className="mainName">Paul Sullivan</span> <br />Full-Stack Developer</span>
-            <p className="mainPara">I am a juinoor developer skilled in ...</p>
+            <p className="mainPara">I am a juinor developer skilled in HTML/CSS,<br/> JavaScript/jQuery, 
+React.js, MySQL, MongoDB,<br/> and MERN stack</p>
         </div>
         <img src={paul} alt='paulImg' className='paulImg'></img>
     </section>

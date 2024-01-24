@@ -13,6 +13,7 @@
     z-index: -1;
     object-fit: cover;
     height: 100vh;
+    mask-image: linear-gradient(to top, transparent, black);
 }
 
 .mainContent {
@@ -42,10 +43,10 @@ font-weight: 100;
 
 @media screen and (max-width:840px) {
     .paulImg {
-        right: -45vw;
+        right: -5vw;
     }
     .mainContent {
-        font-size: 10vw;
+        font-size: 6vw;
     }
     .hello {
         font-size: 4.5vw;
@@ -53,6 +54,6 @@ font-weight: 100;
 }
 @media screen and (max-width:480px) {
     .paulImg {
-        right: -85vw;
+        right: -5vw;
     }
 }
