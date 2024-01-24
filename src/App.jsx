@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import Navbar from './components/navbar'; // Adjust the path accordingly
+import Navbar from './components/navbar/navbar'; // Adjust the path accordingly
 import Main from './components/main/main';
 import About from './components/about/about';
 // Other imports and component code...
@@ -8,7 +8,7 @@ import About from './components/about/about';
 const App = () => {
   return (
     <div>
-      <Navbar /> 
+      <Navbar/> 
       <Main/>
       <About/>
     </div>
