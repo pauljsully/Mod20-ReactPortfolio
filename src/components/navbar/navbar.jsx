@@ -16,10 +16,10 @@ const Navbar = () => {
         <Link to="/resume" className='menulistitem'>Resume</Link>
         {/* Add more menu items as needed */}
       </div>
-      <button className='contactBtn'>
+      <Link to="/contact" className='contactBtn'>
         <img src={contactImg} alt='contactImg' className='contactImg' />
         Contact Me
-      </button>
+      </Link>
     </nav>
   );
 };

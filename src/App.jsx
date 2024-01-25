@@ -5,6 +5,7 @@ import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Portfolio from './components/portfolio/portfolio';
+import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
 // The App component
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Add more routes for other pages */}
         </Routes>
         

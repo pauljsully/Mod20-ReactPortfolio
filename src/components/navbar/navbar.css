@@ -1,5 +1,5 @@
 .navbar {
-    background: rgb(30,30,30);
+    background: #292622;
     color: white;
     height: 5rem;
     width: 100vw;
@@ -43,7 +43,7 @@
 
 .contactBtn {
     background: rgb(239, 164, 23);
-    color: rgb(0, 0, 0);
+    color: #292622;
     border: none;
     display: flex;
     align-items: center;
@@ -52,8 +52,16 @@
     border-radius: 2rem;
     cursor: pointer;
     margin: 1rem;
+    text-decoration: none;
+}
+
+.contactItem {
+    text-decoration: none;
 }
 
 .contactBtn:hover {
     background: white;
+    color: #292622;
+    font-weight: 500;
+    text-decoration: none;
 }

@@ -13,7 +13,7 @@
     z-index: -1;
     object-fit: cover;
     height: 100vh;
-    mask-image: linear-gradient(to top, transparent, black);
+    mask-image: linear-gradient(to top, transparent, #292622);
 }
 
 .mainContent {
