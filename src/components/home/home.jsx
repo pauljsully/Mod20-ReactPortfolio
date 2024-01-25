@@ -1,8 +1,8 @@
 import React from 'react'
-import '../../css/main.css';
+import './home.css';
 import paul from '../../assets/paul.png';
 
-const Main = () => {
+const Home = () => {
   return (
     <section id='main'>
         <div className='mainContent'>
@@ -16,4 +16,4 @@ React.js, MySQL, MongoDB,<br/> and MERN stack</p>
   )
 }
 
-export default Main
+export default Home
