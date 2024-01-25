@@ -20,6 +20,8 @@ const Navbar = () => {
         <img src={contactImg} alt='contactImg' className='contactImg' />
         Contact Me
       </Link>
+
+      
     </nav>
   );
 };
