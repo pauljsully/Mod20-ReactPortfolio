@@ -17,8 +17,7 @@ const Portfolio = () => {
     {
       title: 'Diet Ninja',
       imageSrc: DietNinja,
-      githubLink: 'https://github.com/yourusername/project1',
-      deployLink: 'https://yourdeployedlinkforproject1.com',
+      githubLink: 'https://github.com/TheYenMan/project-1-dietninja-main.git',
     },
     {
       title: 'Patient +',
@@ -29,8 +28,6 @@ const Portfolio = () => {
     {
       title: 'Coming Soon',
       imageSrc: Question,
-      githubLink: 'https://github.com/yourusername/project1',
-      deployLink: 'https://yourdeployedlinkforproject1.com',
     },
   ];
 

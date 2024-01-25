@@ -23,8 +23,8 @@
 .menulistitem {
     margin: 1rem;
     cursor: pointer;
-    color: white; /* Set the normal text color */
-    text-decoration: none; /* Remove default underline for links */
+    color: white;
+    text-decoration: none; 
 }
 
 .menulistitem:hover {
