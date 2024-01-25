@@ -1,24 +1,32 @@
-import React from 'react';
-import Navbar from './components/navbar/navbar'; // Adjust the path accordingly
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// Import your page components
+import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Portfolio from './components/portfolio/portfolio';
-import Resume from './components/resume/resume';
 import Footer from './components/footer/footer';
 
-
+// The App component
 const App = () => {
   return (
-    <div>
-      <Navbar/> 
-      <Home/>
-      <About/>
-      <Portfolio/>
-      <Resume/>
-      <Footer/>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+
+        {/* Wrap your Routes with a Routes element */}
+        <Routes>
+          {/* Define routes for each page */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          {/* Add more routes for other pages */}
+        </Routes>
+        
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
 export default App;
-
