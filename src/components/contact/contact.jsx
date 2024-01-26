@@ -4,7 +4,6 @@ import GitHub from '../../assets/github.png';
 import Instagram from '../../assets/instagram.png';
 
 const Contact = () => {
-  // State to manage form data and validation
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,28 +12,27 @@ const Contact = () => {
 
   const [validationErrors, setValidationErrors] = useState({});
 
-  // Event handler for input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    // Update form data
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
 
-    // Clear validation errors when the user starts typing
+
     setValidationErrors((prevErrors) => ({
       ...prevErrors,
       [name]: '',
     }));
   };
 
-  // Event handler for form submission
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate the form fields
+
     const errors = {};
 
     if (!formData.name.trim()) {
@@ -51,18 +49,15 @@ const Contact = () => {
       errors.message = 'Message is required';
     }
 
-    // If there are errors, update the state to show the notifications
+
     if (Object.keys(errors).length > 0) {
       setValidationErrors(errors);
     } else {
-      // Handle form submission logic here (e.g., send the form data to a server)
       console.log('Form submitted:', formData);
     }
   };
 
-  // Helper function to validate email format
   const isValidEmail = (email) => {
-    // You can use a more sophisticated email validation regex if needed
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
@@ -90,7 +85,6 @@ const Contact = () => {
           value={formData.email}
           onChange={handleInputChange}
           onBlur={() => {
-            // Validate email on blur
             if (formData.email.trim() && !isValidEmail(formData.email)) {
               setValidationErrors((prevErrors) => ({
                 ...prevErrors,
