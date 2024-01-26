@@ -54,6 +54,12 @@
     margin-top: 1rem;
     display: flex;
   }
+
+  .error {
+    color: rgba(255, 0, 0, 0.8); /* Red color with 80% opacity */
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
   
 
   
