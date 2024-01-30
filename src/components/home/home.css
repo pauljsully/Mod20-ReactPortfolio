@@ -43,7 +43,7 @@ font-weight: 100;
 
 @media screen and (max-width:840px) {
     .paulImg {
-        right: -5vw;
+        right: -25vw;
     }
     .mainContent {
         font-size: 6vw;
@@ -54,6 +54,6 @@ font-weight: 100;
 }
 @media screen and (max-width:480px) {
     .paulImg {
-        right: -5vw;
+        right: -50vw;
     }
 }
