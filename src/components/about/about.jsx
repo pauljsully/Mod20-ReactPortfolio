@@ -9,10 +9,9 @@ const About = () => {
     <section id='about'>
 <span className="aboutTitle">About Me </span> <br/>
 
-<span className="aboutDesc">Dedicated and adaptable professional with over four 
-years of experience in healthcare and a recent transition to a career in technology 
-through the GWU Full Stack Coding Bootcamp. Proficient in HTML/CSS, JavaScript/jQuery, 
-React.js, MySQL, MongoDB, and MERN stack. <br /> <br />I bring a unique blend of healthcare expertise 
+<span className="aboutDesc">Dedicated and adaptable professional with over four years of experience in healthcare 
+and a recent transition to a career in technology through the GWU Full Stack Coding Bootcamp. Proficient in HTML/CSS, 
+JavaScript/jQuery, React.js, MySQL, MongoDB, and MERN stack. <br /> <br />I bring a unique blend of healthcare expertise 
 and coding skills. My background highlights a commitment to continuous learning, problem-solving, 
 and effective communication. Eager to apply my diverse skill set to a junior developer position, 
 I am well-equipped to contribute innovative solutions and thrive in dynamic, collaborative environments.</span>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './contact.css';
 import GitHub from '../../assets/github.png';
 import Instagram from '../../assets/instagram.png';
+import LinkedIn from '../../assets/linkedin.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -110,6 +111,9 @@ const Contact = () => {
         </button>
 
         <div className="links">
+          <a href="https://www.linkedin.com/in/paul-sullivan-148669225/" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedIn} alt="Linkedin" className="link" />
+          </a>
           <a href="https://github.com/pauljsully" target="_blank" rel="noopener noreferrer">
             <img src={GitHub} alt="Github" className="link" />
           </a>

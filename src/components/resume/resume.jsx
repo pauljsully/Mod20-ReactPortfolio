@@ -1,29 +1,12 @@
 import React from 'react';
 import './resume.css';
-
+import resumeImage from './resume.png';
+import { saveAs } from 'file-saver';
 
 const Resume = () => {
   const downloadResume = () => {
-    // Assume 'resume.pdf' is the name of your pre-generated PDF file
-    const pdfUrl = '/path-to-your-pdf-folder/resume.pdf';
-
-    // Create a temporary anchor element
-    const link = document.createElement('a');
-
-    // Set the href attribute with the PDF file URL
-    link.href = pdfUrl;
-
-    // Set the download attribute with the desired file name
-    link.download = 'resume.pdf';
-
-    // Append the link to the body
-    document.body.appendChild(link);
-
-    // Trigger a click on the link to start the download
-    link.click();
-
-    // Remove the link from the body after the download starts
-    document.body.removeChild(link);
+    // Trigger the download using FileSaver.js
+    saveAs(resumeImage, 'resume.png');
   };
 
   return (
