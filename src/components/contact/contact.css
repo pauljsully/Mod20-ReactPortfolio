@@ -49,11 +49,25 @@
     background: rgb(239, 164, 23);
     font-weight: 400;
   }
-  
+
   .links {
     margin-top: 1rem;
     display: flex;
+    justify-content: center; /* Optional: Center the links horizontally */
   }
+  
+  .links img {
+    max-width: 40px; /* Adjust the maximum width of the images */
+    height: auto;
+    margin: 0 0.5rem; /* Adjust the margin between images */
+  }
+  
+  .links a {
+    margin: 0; /* Remove any additional margin from the anchor tags */
+  }
+  
+  
+
 
   .error {
     color: rgba(255, 0, 0, 0.8); /* Red color with 80% opacity */

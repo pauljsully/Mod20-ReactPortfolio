@@ -1,75 +1,106 @@
-#apps {
-    margin: 0 auto;
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    text-align: center;
+.portfolioTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 3rem auto; /* Adjust margin-top as needed */
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project {
+  padding: 100px 0;
+  background-color: #292622;
+}
+
+.project p {
+  color: #ccc;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.6em;
+  margin: 20px auto 40px auto;
+  text-align: center;
+  width: 70%;
+}
+
+.projectsContainer {
+  justify-content: space-around;
+  align-items: flex-start; /* Center the items vertically */
+}
+
+.proj-imgbx img {
+  max-width: 100%;
+  height: auto;
+}
+
+.proj-imgbx {
+  margin: 0 auto;
+  max-width: 25rem;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, rgb(239, 164, 23) -5.91%, #292622 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+
+.proj-txtx h4 {
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/* Media Query for better mobile responsiveness */
+@media screen and (max-width: 767px) {
+  .proj-imgbx {
+    flex: 0 0 calc(100% - 24px);
   }
-  
-  .portfolioTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .projectsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .project {
-    text-align: center;
-  }
-  
-  .projectDetails {
-    margin: 0.5rem;
-    padding: 1.5rem 4rem;
-    border-radius: 0.5rem;
-    background: #3a3630;
-    font-weight: 200;
-  }
-  
-  .projectImg img {
-    max-width: 80%;
-    width: 80rem;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .links {
-    margin-top: 10px;
-    display: flex; /* Add display: flex to make child elements flexible */
-    justify-content: center; /* Center child elements horizontally */
-  }
-  
-  .links img {
-    width: 2.5rem;
-    margin: 0 5px;
-  }
-  
-  .projectDetails>h3 {
-    margin: 0.5rem;
-    font-weight: 200;
-  }
-  
-  /* Media Query for better mobile responsiveness */
-  @media screen and (max-width: 709px) {
-    .projectsContainer {
-      grid-template-columns: 1fr;
-      max-width: 80%;
-      width: 80rem;
-    }
-  
-    .projectDetails {
-      padding: 1.5rem 2rem; /* Adjust padding for smaller screens */
-    }
-  }
-  
+}
