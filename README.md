@@ -69,7 +69,7 @@ npm start
 ## Usage
 
 GITHUB link: (https://github.com/pauljsully/Mod20-ReactPortfolio.git)
-DEPLOYED Link: ("https://lucent-sable-52fc16.netlify.app/")
+DEPLOYED Link: (https://paulsullivan-portfolio.netlify.app/)
 
 ## License
 
