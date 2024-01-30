@@ -12,6 +12,12 @@ import Question from '../../assets/question.png';
 const Portfolio = () => {
   const projects = [
     {
+      title: 'Patient +',
+      imageUrl: PatientPlus,
+      githubLink: 'https://github.com/pauljsully/Project2-patientPlus',
+      deployLink: 'https://patientplusportal-ec99a88081f0.herokuapp.com/',
+    },
+    {
       title: 'Daily Weather App',
       imageUrl: Weather,
       githubLink: 'https://github.com/pauljsully/Mod6-DailyWeather.git',
@@ -20,12 +26,6 @@ const Portfolio = () => {
       title: 'Diet Ninja',
       imageUrl: DietNinja,
       githubLink: 'https://github.com/TheYenMan/project-1-dietninja-main.git',
-    },
-    {
-      title: 'Patient +',
-      imageUrl: PatientPlus,
-      githubLink: 'https://github.com/pauljsully/Project2-patientPlus',
-      deployLink: 'https://patientplusportal-ec99a88081f0.herokuapp.com/',
     },
     {
       title: 'Coming Soon',
