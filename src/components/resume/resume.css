@@ -1,0 +1,56 @@
+#resume-wrapper {
+    /* Styles specific to the Resume component */
+  }
+  
+  #resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgb(239, 164, 23);
+  }
+  
+  #resume-container h1 {
+    border-bottom: 10px solid rgb(239, 164, 23);
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px; 
+    margin: 0; 
+  }
+  
+  #resume-container h2 {
+    color: #fff;
+    border-bottom: 1px solid rgb(239, 164, 23);
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  #resume-container p {
+    font-weight: 200;
+  }
+  
+  #resume-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #resume-container li {
+    margin-bottom: 10px;
+    font-weight: 200;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3a3630;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(239, 164, 23);
+  }
+  
