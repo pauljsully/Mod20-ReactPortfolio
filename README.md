@@ -63,7 +63,7 @@ npm start
  "http://localhost:3001/api/users/"
 
 5. To just view the product, click on the deployed link:
-"https://lucent-sable-52fc16.netlify.app/"
+"https://paulsullivan-portfolio.netlify.app/"
 
 
 ## Usage
