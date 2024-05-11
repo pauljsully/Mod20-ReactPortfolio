@@ -1,12 +1,12 @@
 import React from 'react';
 import './resume.css';
-import resumeImage from './resume.png';
+import resumeImage from './resume2024.png';
 import { saveAs } from 'file-saver';
 
 const Resume = () => {
   const downloadResume = () => {
     // Trigger the download using FileSaver.js
-    saveAs(resumeImage, 'resume.png');
+    saveAs(resumeImage, 'resume2024.png');
   };
 
   return (
